@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="./main.css">
+  <title>QuickNote-快速建立筆記、排版</title>
+</head>
+<body class="bgc-w c-blk">
+  <header>
+    <nav class="bgc-w">
+        <div class="navbar-container">
+            <h1 class="fs-lg p-1-1"><a href="#">Quick Note</a></h1>
+            <div id="navbar" class="fs-sm">
+                <a class="d-none active" href="#">主頁簡介</a>
+                <a class="d-none" href="#advantage">特色</a>
+                <a class="d-none" href="#introduction">使用方法</a>
+                <a class="d-none" href="#story">關於我們</a>
+                <a class="d-none" href="#contact">聯絡我們</a>
+                <button class="bgc-w fs-lg d-appear"><i class='fas fa-bars'></i></button>
+            </div>
+        </div>
+        </nav>
+    <div class="mask">
+      <div class="menu-box bgc-w fs-md">
+        <a href="#">主頁簡介</a>
+        <a href="#advantage">特色</a>
+        <a href="#introduction">使用方法</a>
+        <a href="#story">關於我們</a>
+        <a href="#contact">聯絡我們</a>
+      </div>
+    </div>
+    <div class='container'>
+      <div class="pattern">
+        <div>
+          <span class="bgc-y" style="width:12rem"></span>
+          <span class="bgc-blu" style="width:12rem"></span>
+          <span class="bgc-y"></span>
+          <span class="bgc-blu" style="width:12rem"></span>
+          <span class="bgc-blu" style="width:12rem"></span>
+          <span class="bgc-y" style="width:12rem"></span>
+          <span class="bgc-y" style="width:12rem"></span>
+          <span class="bgc-blu"></span>
+          <span class="bgc-y" style="width:12rem"></span>
+          <span class="bgc-blu"></span>
+          <span class="bgc-blu"></span>
+          <span class="bgc-y" style="width:12rem"></span>
+        </div>
+      </div>
+      <div class="item-container">
+        <div class="item1">
+          <canvas id="header-canvas"></canvas>
+        </div>
+        <div class="fs-sm item2">
+          <h1 class="fs-lg">Quick Note</h1>
+          <h3 class="fs-md">寫筆記可以有另一種角度</h3>
+          <p class="w-60">Quick Note 是一款記筆記的 Web 應用程式，可以在手機、平板、筆電、電腦上使用快速便捷的語法，記錄您想記錄的每一刻。</p>
+          <div class="d-none" style="color:#568add;">
+            <p># 筆記app</p>
+            <p># 快速建立筆記</p>
+            <p># 我不要再錯過了</p>
+          </div>
+          <input class="item3 btn" type="submit" name="interesting" value="有興趣" style="margin-left:0; margin-top: 0.25rem;">
+        </div>
+      </div>
+      <div id="cube" class="bgc-w"></div>
+    </div>
+  </header>
+  <section id="advantage" class="bgc-blk c-w">
+    <div class="container">
+      <h2 class="fs-lg">我們的特色</h2>
+      <div class="card-container fs-md">
+        <div class="card p-1-1">
+          <h4><i class='fas fa-globe-asia'></i><br>華語輸入</h4>
+          <p class="fs-sm">用過筆記app的人都很清楚，很多筆記軟體適合用於英文輸入的介面，而我們的產品將著重在使用中文輸入法的情況下建立格式、排版，完成一樣的功能</p>
+        </div>
+        <div class="card p-1-1">
+          <h4><i class='fas fa-mobile-alt'></i><br>隨時隨地</h4>
+          <p class="fs-sm">市面的筆記app目前多以筆電、電腦為客戶群；我們想針對手機的使用族群來設計，讓記筆記可以在任何時間、任何地點</p>
+        </div>
+        <div class="card p-1-1">
+          <h4><i class='fas fa-database'></i><br>雲端儲存</h4>
+          <p class="fs-sm">使用雲端資料庫，將檔案遠端儲存，不佔手機空間</p>
+        </div>
+        <div class="card p-1-1">
+          <h4><i class='fas fa-lightbulb'></i><br>我有點子</h4>
+          <p class="fs-sm">線上資源庫歡迎使用者分享自己的慣用語法、筆記排版、筆記經驗，一起讓做筆記這件事更輕鬆、更點單、更普及</p>
+        </div>
+      </div>
+    </div>
+  </section>
+    <section id="introduction" class="bgc-w c-b" >
+        <div class="container">
+            <div class="mockup"></div>
+            <div>
+                <h2 class="fs-lg">使用方法</h2>
+                <p>透過打入<b>關鍵字</b>，並在<b>不需切換輸入法</b>的情況下輸入起始與終點標籤(如右動畫中的 ˇ 和。)，再按下<b>&crarr;</b>，就可以<b>輕鬆建立各項排版、標示功能</b></p>
+            </div>
+        </div>
+    </section>
+  <section id="story" class="bgc-w c-b">
+    <div class="container">
+      <div>
+        <div class="phone">
+            <div class="phone-base bgc-y"></div>
+            <div id="phone-screen" class="phone-screen bgc-w p-1-1 fs-lg">#typing</div>
+        </div>
+      </div>
+      <div>
+        <h2 class="fs-lg">我們的故事</h2>
+        <p>我們的團隊來自清華大學，對用科技改善生活有一定的理想，並將它們實踐與推廣。如果對我們的議題有興趣的話歡迎在下方留下聯絡資訊</p>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="bgc-blk c-w">
+    <div class="container fs-sm">
+      <h2 class="fs-lg">聯絡我們</h2>
+      <div class="explain">您可以透過以下兩種方式回饋我們：</div>
+      <div class="form-container">
+        <form action="" method="post">
+          <h3 class="explain">按下按鈕，表示有興趣</h3>
+          <input  class="btn" type="submit" name="interesting" value="有興趣">
+        </form>
+        <div class="explain middle-bar">或者，</div>
+        <form action=""  method="post" id="form-specify">
+          <h3 class="explain item1">填寫聯絡資料，我們會寄發 email 通知最新發展進度</h3>
+          <label for="" class="item6"><span class="c-r">*</span>電子郵件</label><input class="item7" placeholder="電子郵件" name="userEmail" type="email" required>
+          <label for="" class="item8">建議</label><input  class="item9"placeholder="建議或想法" name="userComment" type="text" row="2">
+          <input type="submit" class="btn bgc-w c-blk item10" value="送出">
+        </form>
+      </div>
+      <ol>
+        <li>資料僅作為研究用途，不會做公開使用</li>
+        <li><span class="c-r">*</span> 為必填欄位</li>
+      </ol>
+    </div>
+  </section>
+  <footer class="p-2-3 fs-sm">
+    <div><a href="#"><i class='fas fa-angle-up'></i> top</a></div>
+    <div class="other-projects"><strong>其他專案</strong>
+      <span>吉他愛好者不能錯過的製譜工具&nbsp;<a href="https://jack34672.github.io/easysheet/index.html">點我觀看</a></span>
+      <span>輕鬆掌握分享tabata的紀錄app&nbsp;<a href="https://oyungshen.github.io/landingpage/index.html">點我觀看</a></span>
+      <span>想成為麻將大師的必備撇步&nbsp;<a href="https://truman-sean.github.io/Mahjong-App/">點我觀看</a></span>
+   </div>
+   <div>Copyright <i class='far fa-copyright'></i>2019 SeanLee All rights reserved</div>
+  </footer>
+    <!--<script src="socket.io/socket.io.js"></script>-->    
+    <script src="node_modules/socket.io-client/dist/socket.io.js"></script>
+    <!--<script src="http://m106.nthu.edu.tw:8080/~s106062341/QuickNote/socket.io/socket.io.js"></script>-->
+    <script>
+        window.onload = function () {
+            var script = document.createElement('script');
+            script.src = './main.js';
+            document.body.appendChild(script);
+        }
+    </script>
+</body>
+</html>
