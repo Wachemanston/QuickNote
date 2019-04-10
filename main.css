@@ -264,6 +264,8 @@ p {
     width: 80%;
     margin: 0.5rem auto 2rem;
     text-align: center;
+    line-height: 1.25rem;
+    letter-spacing: 0.125rem;
 }
 .phone {
   width: 50%;

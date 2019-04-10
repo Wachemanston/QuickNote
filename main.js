@@ -95,7 +95,19 @@ var timer = window.setInterval(function () {
 // handle interesting button & form
 var target = document.querySelectorAll('input[type=submit]');
 for (let i = 0; i < target.length; i++) {
-    target[i].addEventListener('click', function () { window.confirm('Thank you for your support!'); })
+    target[i].addEventListener('click', function (e) {
+        if (e.target.classList.contains('item10')) {
+            if (!document.querySelector('input.item7').value) {
+                window.alert('Email field is empty!');
+                return false;
+            } else {
+                window.alert('Thank you for your submission!');
+                window.location.replace('https://wachemanston.github.io/QuickNote/#contact');
+            }
+        } else {
+            window.alert('Thank you for your support!');
+        }
+    })
 }
 // scollspy
 var spyElmnt = document.querySelectorAll('section');
