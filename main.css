@@ -314,9 +314,9 @@ p {
     }
 }
 /* contact */
-form {
-  width: 95%;
-  margin: 1.5rem auto;
+#form-interesting, #form-specify {
+    width: 95%;
+    margin: 1.5rem auto;
 }
 label, input {
   display: block;

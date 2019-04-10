@@ -92,7 +92,11 @@ var timer = window.setInterval(function () {
     }
 }, 1000);
 
-
+// handle interesting button & form
+var target = document.querySelectorAll('input[type=submit]');
+for (let i = 0; i < target.length; i++) {
+    target[i].addEventListener('click', function () { window.confirm('Thank you for your support!'); })
+}
 // scollspy
 var spyElmnt = document.querySelectorAll('section');
 var navbarLinkElmnt = document.querySelectorAll('#navbar  a');
